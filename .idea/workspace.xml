@@ -3,6 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="221dff98-d99a-4b05-b5ec-5f29f5ed10fe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/studydesk/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/studydesk/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/studydesk/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/studydesk/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/contact.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,6 +19,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -93,5 +100,9 @@
       <screen x="88" y="34" width="1832" height="1046" />
     </state>
     <state x="584" y="346" key="com.intellij.ide.util.TipDialog/88.34.1832.1046@88.34.1832.1046" timestamp="1622044897253" />
+    <state x="583" y="45" width="840" height="1034" key="search.everywhere.popup" timestamp="1622264054349">
+      <screen x="88" y="34" width="1832" height="1046" />
+    </state>
+    <state x="583" y="45" width="840" height="1034" key="search.everywhere.popup/88.34.1832.1046@88.34.1832.1046" timestamp="1622264054349" />
   </component>
 </project>
