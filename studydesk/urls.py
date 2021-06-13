@@ -18,6 +18,11 @@ from django.urls import path, include
 from blog import views, urls
 
 urlpatterns = [
+    path('', views.PostList.as_view(), name='home'),
+    path('<slug:slug>/', views.PostDetail.as_view(), name='post_detail'),
+]
+
+urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include(urls))
 ]

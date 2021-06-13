@@ -1,20 +1,14 @@
-from django.db import models
+from django.contrib import admin
+from blog.models import Blog
 
-class ContactUs(models.Model):
-
-    name = models.CharField(max_length=200, null=False)
-    phone = models.CharField(max_length=200, null=False)
-    subject = models.CharField(max_length=200, null=False, default="")
-    email = models.EmailField(max_length=200, null=False)
-    content = models.TextField(null=False)
-    created_at = models.DateTimeField(auto_now_add=True)
-
-    class Meta:
-        verbose_name_plural = "Contact Us"
-        ordering = ('-created_at',)
+admin.site.register(Blog)
 
 
+class PostAdmin(admin.ModelAdmin):
+    list_display = ('title', 'slug', 'status', 'created_on')
+    list_filter = ("status",)
+    search_fields = ['title', 'content']
+    prepopulated_fields = {'slug': ('title',)}
 
 
-
-
+admin.site.register(Post, PostAdmin)
