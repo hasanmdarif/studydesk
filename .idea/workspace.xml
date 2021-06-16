@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="221dff98-d99a-4b05-b5ec-5f29f5ed10fe" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/studydesk.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/studydesk.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +24,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -87,5 +81,23 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="660" y="344" width="678" height="432" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1618852608417">
+      <screen x="88" y="34" width="1832" height="1046" />
+    </state>
+    <state x="660" y="344" width="678" height="432" key="#com.intellij.fileTypes.FileTypeChooser/88.34.1832.1046@88.34.1832.1046" timestamp="1618852608417" />
+    <state x="734" y="258" width="530" height="605" key="FileChooserDialogImpl" timestamp="1622535397569">
+      <screen x="88" y="34" width="1832" height="1046" />
+    </state>
+    <state x="734" y="258" width="530" height="605" key="FileChooserDialogImpl/88.34.1832.1046@88.34.1832.1046" timestamp="1622535397569" />
+    <state x="584" y="346" key="com.intellij.ide.util.TipDialog" timestamp="1622534637167">
+      <screen x="88" y="34" width="1832" height="1046" />
+    </state>
+    <state x="584" y="346" key="com.intellij.ide.util.TipDialog/88.34.1832.1046@88.34.1832.1046" timestamp="1622534637167" />
+    <state x="583" y="45" width="840" height="1034" key="search.everywhere.popup" timestamp="1622264054349">
+      <screen x="88" y="34" width="1832" height="1046" />
+    </state>
+    <state x="583" y="45" width="840" height="1034" key="search.everywhere.popup/88.34.1832.1046@88.34.1832.1046" timestamp="1622264054349" />
   </component>
 </project>
