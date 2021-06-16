@@ -3,81 +3,32 @@
 {% block title %} Contact Us  {% endblock title %}
 
 {% block body %}
-	<section>
-	<div class="container">
-		<div class="contactinfo">
-			
-			<div>
-				<h2>Contact Us</h2>
-				<ul class="info">
-					<li>
-						<i class="fa fa-map-marker" aria-hidden="true"></i>
-						<span>patna</span>
-					</li>
-					<li>
-						<i class="fa fa-envelope" aria-hidden="true"></i>
-						<span>name@gmail.com</span>
-					</li>
-					<li>
-						<i class="fa fa-phone" aria-hidden="true"></i>
-						<span>9999999999</span>
-					</li>
-				</ul>
-			
-		    <ul class="sci">					
-				<li><i class="fa fa-facebook-official" aria-hidden="true"></i></li>
-				<li><i class="fa fa-twitter-square" aria-hidden="true"></i></li>
-				<li><i class="fa fa-instagram" aria-hidden="true"></i></li>
-				<li><i class="fa fa-pinterest-square" aria-hidden="true"></i></li>
-				<li><i class="fa fa-linkedin-square" aria-hidden="true"></i></li>
-			</ul>
-		</div>
-	</div>
-
 	
-	<div class="contactForm">
-		<form action="{% url 'contact' %}" method="post">
-		{% csrf_token %}
-		<h2>Send a Message</h2>
-		<div class="formBox">
-		<div class="inputBox w50">
-			<input type="text" name="name" required="">
-			<span>Name</span>
-		</div>
-		<div class="inputBox w50">
-			<input type="text" name="subject" required="">
-			<span>Subject</span>
-		</div>
-		<div class="inputBox w50">
-			<input type="text" name="email" required="">
-			<span>Email Address</span>
-		</div>
-		<div class="inputBox w50">
-			<input type="text" name="phone" required="">
-			<span>Mobile Number</span>
-		</div>
-		<div class="inputBox w100">
-			<textarea name="content" required></textarea>
-			<span>Write your message here...</span>
-		</div>
-		<div class="inputBox w100">
-			<input type="submit" value="Send">
-		</div>
+	<div class="contact-section">
+		
+
+		<div class="border"></div>
+	</div>
+		
+	
+
+
+		<form class="contact-form" action="{% url 'contact' %}" method="post">
+			{% csrf_token %}
+
+			<h1>Contact Us</h1>
+			<input type="text" name="name" class="contact-form-text" placeholder="Your name">
+			<input type="email" name="email" class="contact-form-text" placeholder="Your email">
+			<input type="text" name="phone" class="contact-form-text" placeholder="Your phone">
+			<input type="text" name="subject" class="contact-form-text" placeholder="Subject">
+			<textarea class="contact-form-text" name="content" placeholder="Your message"></textarea>
+			<input type="submit" class="contact-form-btn" value="Send">
+
 		</form>
-		<div class="header"></div>
-
-
-		
-
-	
-		</div>
 	</div>
-</div>
-
-
-
-</section>
-		
-		
 	
+	</div>
+
+
+
 {% endblock %}
