@@ -1,16 +1,13 @@
 from django.contrib import admin
-
-# Register your models here.
+from .models import Post
 from .models import ContactUs
+
 class ContactAdmin(admin.ModelAdmin):
     list_display = ('name', 'subject', 'email', 'created_at')
     list_filter = ('created_at',)
 
 
 admin.site.register(ContactUs, ContactAdmin)
-
-from django.contrib import admin
-from .models import Post
 
 
 class PostAdmin(admin.ModelAdmin):

@@ -9,3 +9,6 @@ db.sqlite3-journal
 /.idea
 /env
 /blog/migrations/
+*.sqlite3
+ .idea/workspace.xml
+
