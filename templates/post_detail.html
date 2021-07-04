@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,3 +9,67 @@
 
 </body>
 </html>
+=======
+{% extends 'base.html' %} 
+
+{% block body %}
+<style>
+	body {
+        font-family: "Roboto", sans-serif;
+        font-size: 18px;
+        background-color: #fdfdfd;
+        margin:36px;
+        position: relative;
+       
+    }
+    footer {
+    position: fixed;
+    width: 100%;
+    padding: 10px 10px 0px 10px;
+    bottom: 0;
+    height: 50px;
+    background: black;
+    color:white;
+
+    }
+
+
+
+	.container{
+    	display: flex;
+    	text-align: center;
+    	height: 50px
+        background-color: rgb(245, 195, 195);
+        align-self: center;
+    	padding: 5px;
+    	padding-right: 5px;
+    	padding-left: 5px;
+    	padding-top: 5px;
+    	margin: -5px;
+    	margin-top: 12px;
+
+
+    }
+    .roww{
+    	display: flex;
+    	width: 2000px;
+    	background-color: rgb(248, 239, 239);
+    	margin-top: 0px;
+}
+    
+</style>
+
+<div class="container" style="margin: 36px; text-align: justify;">
+  <div class="roww">
+    <div class="col-md-12 card mb-4  mt-3 left  top">
+      <div class="card-body">
+        <h1>{% block title %} {{ object.title }} {% endblock title %}</h1>
+        <p class=" text-muted">{{ post.author }} | {{ post.created_on }}</p>
+        <p class="card-text ">{{ object.content | safe }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
+>>>>>>> cf9b4847527b4ac5228600db616e16965ac05dff
