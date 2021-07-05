@@ -124,7 +124,7 @@
                 <div class="card-border text-white bg-warning mb-4">
                     <strong><h2 class="card-title">{{ post.title }}</h2></strong>
                     <p class="card-text text-muted h6">{{ post.author }} | {{ post.created_on}} </p>
-                    <p class="card-text">{{post.content|safe|slice:":250" }}</p>
+                    <p class="card-text">{{ post.excerpt|safe }}</p>
 
                     <a  href="{% url 'post_detail' post.slug  %}" class="btn btn-warning">Read More &rarr;</a>
                 </div>
