@@ -31,3 +31,11 @@ class PostList(generic.ListView):
 class PostDetail(generic.DetailView):
     model = Post
     template_name = 'post_detail.html'
+
+def search(request):
+    # post_list = Post.objects.all()
+    query = request.GET.get('query')
+    post_list = Post.objects.filter(title__icontains=query)
+    params ={'post_list': post_list,'query':query}
+    return render (request,'search.html',params)
+    # return HttpResponse('this is search')

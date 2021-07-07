@@ -65,11 +65,11 @@
     <div class="collapse navbar-collapse" id="myNavbar">
 
       
-      <form class="navbar-form navbar-right" role="search">
+      <form method="get" action="/search" class="navbar-form navbar-right" role="search">
         <div class="form-group input-group">
-          <input type="text" class="form-control" placeholder="Search">
+          <input type="text" class="form-control" placeholder="Search" name="query" id="query">
           <span class="input-group-btn">
-            <button class="btn btn-default" type="button">
+            <button class="btn btn-default" type="submit">
               <span style="color: orange" class="glyphicon glyphicon-search"></span>
             </button>
           </span>        
