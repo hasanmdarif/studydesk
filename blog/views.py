@@ -39,3 +39,7 @@ def search(request):
     params ={'post_list': post_list,'query':query}
     return render (request,'search.html',params)
     # return HttpResponse('this is search')
+
+class AboutUs(generic.ListView):
+    model = Post
+    template_name = 'about.html'

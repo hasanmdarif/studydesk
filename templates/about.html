@@ -1,0 +1,164 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.row{
+  margin: 40px;
+  padding: 50px;
+}
+
+.column {
+  float: left;
+  width: 24.9%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  transition: 1s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+.card:hover{
+  transform: scale(1.2);
+  z-index: 2;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+footer {
+    position: static;
+    padding: 10px 10px 0px 10px;
+    bottom: 0;
+    height: 50px;
+    background: black;
+    color:white;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    }
+
+</style>
+
+<div class="about-section">
+  <h1>WELCOME TO STUDY DESK</h1>
+  <p><b>Study Desk</b> is a website which lets you read an article  on our website and you can get a good amount of reach from here.</p>
+  <p><b>Our mission</b> is to provide you with the knowledge and skills you need to be able to craft the kind of stories that you want to tell. we want to empower individuals and be a force for good in the world.</p>
+  <p><b>Our goals</b> to be improved and more inspiring every single day!</p>
+
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<h3 style="text-align:center">We work together,create and produce work that we are proud of for folks that we believe in.
+    <br> we are available for you in a wide range of creative disciplines for a variety of educational topic, THANK YOU.</h3></br>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="{% static 'images/MOON1.jpeg' %}" alt="Md. Arif Hasan" style="width:100%">
+      <div class="container">
+          <div class="col-sm-3">
+        <h2>Md. Arif Hasan</h2>
+        <p class="title">Back-end Developer</p>
+        <p>Yesterday you said tomorrow. Just do it.</p>
+        <p>jane@example.com</p>
+        <p><button class="button">Contact</button></p>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="#" alt="Neha Jaiswal" style="width:100%">
+      <div class="container">
+        <h2>Neha Jaiswal</h2>
+        <p class="title">Back-end Developer</p>
+        <p>Whatever you do, do it well.</p>
+        <p>mike@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="#" alt="Anjali Rani" style="width:100%">
+      <div class="container">
+        <h2>Anjali Rani</h2>
+        <p class="title">Front-end Developer</p>
+        <p>Problems are not stop signs, they are guidelines.</p>
+        <p>john@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+<div class="column">
+    <div class="card">
+      <img src="#" alt="Moni Kumari" style="width:100%">
+      <div class="container">
+        <h2>Moni Kumari</h2>
+        <p class="title">Front-end Developer</p>
+        <p>Inspired by Experiences, Fueled  By Hard Work & Passion.</p>
+        <p>monikumari17886@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+</div>
+{% endblock %}
