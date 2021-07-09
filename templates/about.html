@@ -4,22 +4,22 @@
 <style>
 body {
   font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
+  {#margin: 0;#}
 }
 
-html {
-  box-sizing: border-box;
-}
+{#html {#}
+{#  box-sizing: border-box;#}
+{#}#}
+{##}
+{#*, *:before, *:after {#}
+{#  box-sizing: inherit;#}
+{#}#}
+{#.row{#}
+{#  margin: 40px;#}
+{#  padding: 50px;#}
+{#}#}
 
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-.row{
-  margin: 40px;
-  padding: 50px;
-}
-
-.column {
+.col-md-3 {
   float: left;
   width: 24.9%;
   margin-bottom: 16px;
@@ -37,6 +37,7 @@ html {
 }
 
 .about-section {
+  margin: 0px;
   padding: 50px;
   text-align: center;
   background-color: #474e5d;
@@ -105,60 +106,61 @@ footer {
 <h2 style="text-align:center">Our Team</h2>
 <h3 style="text-align:center">We work together,create and produce work that we are proud of for folks that we believe in.
     <br> we are available for you in a wide range of creative disciplines for a variety of educational topic, THANK YOU.</h3></br>
+<div class="container">
 <div class="row">
-  <div class="column">
+  <div class="col-md-3">
     <div class="card">
-      <img src="{% static 'images/MOON1.jpeg' %}" alt="Md. Arif Hasan" style="width:100%">
-      <div class="container">
-          <div class="col-sm-3">
-        <h2>Md. Arif Hasan</h2>
+      <img src="{% static 'images/arif.jpeg' %}" alt="Arif Hasan" style="width:100%">
+{#      <div class="container">#}
+{#          <div class="col-sm-3">#}
+        <h2>Arif Hasan</h2>
         <p class="title">Back-end Developer</p>
-        <p>Yesterday you said tomorrow. Just do it.</p>
-        <p>jane@example.com</p>
-        <p><button class="button">Contact</button></p>
-          </div>
-      </div>
+{#        <p>Yesterday you said tomorrow. Just do it.</p>#}
+        <p>arif.hasan.jmi@gmail.com</p>
+        <p><a href="https://www.linkedin.com/in/arif-hasan-937218124/" ><button class="button" style="color: orange">CONNECT </button></a></p>
+{#          </div>#}
+{#      </div>#}
     </div>
   </div>
 
-  <div class="column">
+  <div class="col-md-3">
     <div class="card">
-      <img src="#" alt="Neha Jaiswal" style="width:100%">
-      <div class="container">
+      <img src="{% static 'images/neha.jpeg' %}" alt="Neha Jaiswal" style="width:100%">
+{#      <div class="container">#}
         <h2>Neha Jaiswal</h2>
         <p class="title">Back-end Developer</p>
-        <p>Whatever you do, do it well.</p>
-        <p>mike@example.com</p>
-        <p><button class="button">Contact</button></p>
-      </div>
+{#        <p>Whatever you do, do it well.</p>#}
+        <p>nehajaiswal412001@gmail.com</p>
+        <p><a href="https://www.linkedin.com/in/neha-jaiswal-62b4a7180/"> <button class="button" style="color: orange">CONNECT</button></a></p>
+{#      </div>#}
     </div>
   </div>
   
-  <div class="column">
+  <div class="col-md-3">
     <div class="card">
-      <img src="#" alt="Anjali Rani" style="width:100%">
-      <div class="container">
+      <img src="{% static 'images/anjali.jpeg' %}" alt="Anjali Rani" style="width:100%">
+{#      <div class="container">#}
         <h2>Anjali Rani</h2>
         <p class="title">Front-end Developer</p>
-        <p>Problems are not stop signs, they are guidelines.</p>
-        <p>john@example.com</p>
-        <p><button class="button">Contact</button></p>
-      </div>
+{#        <p>Problems are not stop signs, they are guidelines.</p>#}
+        <p>anjalirani047@gmail.com</p>
+        <p><a href="https://www.linkedin.com/in/anjali-rani-874312173/"> <button class="button" style="color: orange">CONNECT</button></a></p>{#      </div>#}
     </div>
   </div>
 
-<div class="column">
+<div class="col-md-3">
     <div class="card">
-      <img src="#" alt="Moni Kumari" style="width:100%">
-      <div class="container">
+      <img src="{% static 'images/moni.jpeg' %}" alt="Moni Kumari" style="width:100%">
+{#      <div class="container">#}
         <h2>Moni Kumari</h2>
         <p class="title">Front-end Developer</p>
-        <p>Inspired by Experiences, Fueled  By Hard Work & Passion.</p>
+{#        <p>Inspired by Experiences, Fueled  By Hard Work & Passion.</p>#}
         <p>monikumari17886@gmail.com</p>
-        <p><button class="button">Contact</button></p>
-      </div>
+        <p><a href="https://www.linkedin.com/in/moni-kumari-1759471a9/"> <button class="button" style="color: orange">CONNECT</button></a></p>
+{#      </div>#}
     </div>
   </div>
 
+</div>
 </div>
 {% endblock %}
