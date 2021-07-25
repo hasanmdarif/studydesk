@@ -1,6 +1,7 @@
 from django.contrib import admin
 from .models import Post
 from .models import ContactUs
+
 class ContactAdmin(admin.ModelAdmin):
     list_display = ('name', 'subject', 'email', 'created_at')
     list_filter = ('created_at',)
