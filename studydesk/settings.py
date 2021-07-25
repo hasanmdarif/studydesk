@@ -35,7 +35,7 @@ SECRET_KEY = 'kt=ju#z0a%hd+v*wjf+0g9(tv_8#gej&m6bab$o0d@1%$lhk+o'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1','https://study-desk.herokuapp.com/', config('SERVER', default='127.0.0.1')]
+ALLOWED_HOSTS = ['localhost', '127.0.0.1','https://study-desk.herokuapp.com/', config('SERVER', )]
 
 # Application definition
 
