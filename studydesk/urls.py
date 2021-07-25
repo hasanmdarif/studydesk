@@ -20,7 +20,7 @@ from django.contrib import admin
 
 admin.site.site_header = 'StudyDesk | Admin Panel'                    # default: "Django Administration"
 admin.site.index_title = 'StudyDesk Administration'                 # default: "Site administration"
-admin.site.site_title = 'StudyDesk Site Admin' 
+admin.site.site_title = 'StudyDesk Site Admin'
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include(urls))
