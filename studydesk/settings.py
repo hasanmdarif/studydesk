@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
+from distutils.command.config import config
+
 from django.contrib.messages import constants as messages
 
 MESSAGE_TAGS = {
@@ -31,9 +33,9 @@ TEMPLATES_DIRS = os.path.join(BASE_DIR,'templates')
 SECRET_KEY = 'kt=ju#z0a%hd+v*wjf+0g9(tv_8#gej&m6bab$o0d@1%$lhk+o'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'https://study-desk.herokuapp.com/']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1','https://study-desk.herokuapp.com/', config('SERVER', default='127.0.0.1')]
 
 # Application definition
 
